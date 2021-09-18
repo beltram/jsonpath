@@ -8,7 +8,7 @@ use super::tokens::{FilterToken, ParseToken, Token};
 
 #[derive(Clone, Debug)]
 pub struct PathParser<'a> {
-    parser: ParserImpl<'a>,
+    pub parser: ParserImpl<'a>,
 }
 
 impl<'a> PathParser<'a> {
@@ -42,7 +42,7 @@ impl<'a> ParserNodeVisitor<'a> for PathParser<'a> {}
 #[derive(Clone, Debug)]
 struct ParserImpl<'a> {
     token_reader: TokenReader<'a>,
-    parse_node: Option<ParserNode>,
+    pub parse_node: Option<ParserNode>,
 }
 
 impl<'a> ParserImpl<'a> {
