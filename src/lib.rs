@@ -131,7 +131,7 @@ extern crate serde_json;
 use serde_json::Value;
 
 #[allow(deprecated)]
-pub use parser::Node;
+use parser::Node;
 #[allow(deprecated)]
 pub use parser::Parser;
 #[allow(deprecated)]
