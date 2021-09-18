@@ -40,7 +40,7 @@ impl<'a> PathParser<'a> {
 impl<'a> ParserNodeVisitor<'a> for PathParser<'a> {}
 
 #[derive(Clone, Debug)]
-struct ParserImpl<'a> {
+pub struct ParserImpl<'a> {
     token_reader: TokenReader<'a>,
     pub parse_node: Option<ParserNode>,
 }
