@@ -8,5 +8,5 @@ pub mod str_reader;
 mod tokenizer;
 pub mod tokens;
 pub mod parser_token_handler;
-mod parser_node_visitor;
+pub mod parser_node_visitor;
 mod path_parser;
