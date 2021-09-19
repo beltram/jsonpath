@@ -135,6 +135,8 @@ use parser::Node;
 #[allow(deprecated)]
 pub use parser::Parser;
 pub use paths::tokens::ParseToken;
+pub use paths::parser_token_handler::ParserTokenHandler;
+pub use paths::str_reader::StrRange;
 #[allow(deprecated)]
 pub use select::{Selector, SelectorMut};
 
