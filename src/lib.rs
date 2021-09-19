@@ -134,6 +134,7 @@ use serde_json::Value;
 use parser::Node;
 #[allow(deprecated)]
 pub use parser::Parser;
+pub use paths::tokens::ParseToken;
 #[allow(deprecated)]
 pub use select::{Selector, SelectorMut};
 
